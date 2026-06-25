@@ -6,7 +6,7 @@ import db from './database/db.js';
 import urlRoutes from './routes/urlRoutes.js';
 
 const app = express();
-dotenv.config().
+dotenv.config()
 
 app.use(helmet())
 app.use(express.json())

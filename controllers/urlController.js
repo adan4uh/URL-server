@@ -35,7 +35,7 @@ const createUrlController = async (req, res) => {
         res.status(201).json({
             success: true,
             message: 'shortURL created!',
-            shortUrl: `http://localhost:5000/${shortUrlCode}`,
+            shortUrl: `${process.env.BASE_URL}/${shortUrlCode}`,
             data: newUrl
         });
 
